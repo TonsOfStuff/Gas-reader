@@ -38,12 +38,12 @@ class MainPage(tk.Frame):
         self.label = tk.Label(self, text="Pressure (torr):", font=("Arial", 14))
         self.label.pack(pady=5)
 
-        self.pressureLabel = tk.Label(self, text="N/A", font=("Arial", 14))
+        self.pressureLabel = tk.Label(self, text="N/A", font=("Arial", 18))
         self.pressureLabel.pack()
 
-        self.startButton = tk.Button(self, text="Start Pressure Tracker", font=("Arial", 14), command=self.startPlot)
+        self.startButton = tk.Button(self, text="Start", font=("Arial", 14), command=self.startPlot)
         self.startButton.pack()
-        self.stopButton = tk.Button(self, text="Stop Pressure Tracker", font=("Arial", 14), command=self.stopPlot)
+        self.stopButton = tk.Button(self, text="Stop", font=("Arial", 14), command=self.stopPlot)
         self.stopButton.pack()
 
         #Figure
